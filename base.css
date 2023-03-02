@@ -45,7 +45,9 @@ hr {
   border-bottom: 1px solid var(--hr);
 }
 
-button {
+button,
+input, 
+textarea {
   padding: 0.6em 1.1em;
   background: inherit;
   color: var(--text);
