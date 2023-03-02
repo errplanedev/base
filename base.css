@@ -1,0 +1,65 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --selection: rgba(33, 120, 222, 0.4);
+  --bg: white;
+  --link: #25d;
+  --text: #111;
+  --hr: #dfe2e5;
+}
+
+::selection {
+  background: var(--selection);
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Helvetica', sans-serif;
+  color: var(--text);
+  width: 825px;
+  margin: 0 auto 0 auto;
+  padding-top: 1.8em;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:is(:focus, :hover) {
+  text-decoration: underline;
+}
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--hr);
+}
+
+button {
+  padding: 0.6em 1.1em;
+  background: inherit;
+  color: var(--text);
+  border: 1px var(--hr) solid;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --selection: rgba(255, 76, 76, 0.3);
+    --bg: #101010;
+    --link: #FF4C4C;
+    --text: #FFF;
+    --hr: #1E1E21;
+  }
+}

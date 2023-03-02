@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="base.css">
+    <script src="https://unpkg.com/anchor-js@latest/anchor.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        anchors.options = {
+          icon: '#'
+        }
+        anchors.add('h1');
+      })
+    </script>
+    <style>
+      .anchorjs-link:hover {
+        text-decoration: none;
+      }
+    </style>
+    <title>Base - Classless CSS, done right.</title>
+  </head>
+  <body>
+    <h1 id="top">Base</h1>
+    <hr>
+    <p>Please see the <a href="https://github.com/errplanedev/base">GitHub Repo</a>.</p>
+  </body>
+</html>
