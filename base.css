@@ -66,6 +66,10 @@ input:focus, textarea:focus {
   outline: none;
 }
 
+.anchorjs-link:is(:hover, :focus) {
+  text-decoration: none;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --selection: rgba(255, 76, 76, 0.3);
